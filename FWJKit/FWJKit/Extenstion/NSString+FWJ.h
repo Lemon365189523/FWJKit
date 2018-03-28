@@ -18,7 +18,6 @@
 - (NSUInteger)fwj_includeEmojiLength;
 
 
-
 /**
   返回字符中包含多少个emoji
  */

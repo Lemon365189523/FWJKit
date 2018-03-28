@@ -21,5 +21,4 @@
  */
 -(void) fwj_viewEventWithName:(NSString *) eventName userInfo:(NSDictionary *)dic;
 
-
 @end

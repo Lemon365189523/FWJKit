@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F72E3A86206B2A7100B893E7 /* NSObject+FWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F72E3A85206B2A7100B893E7 /* NSObject+FWJ.m */; };
 		F7699419206890AC004B45B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7699418206890AC004B45B3 /* AppDelegate.m */; };
 		F769941C206890AC004B45B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F769941B206890AC004B45B3 /* ViewController.m */; };
 		F7699421206890AC004B45B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7699420206890AC004B45B3 /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F72E3A84206B2A7100B893E7 /* NSObject+FWJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FWJ.h"; sourceTree = "<group>"; };
+		F72E3A85206B2A7100B893E7 /* NSObject+FWJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FWJ.m"; sourceTree = "<group>"; };
 		F7699414206890AC004B45B3 /* FWJKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FWJKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7699417206890AC004B45B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7699418206890AC004B45B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				F76994362068A73E004B45B3 /* UIImageView+FWJ.m */,
 				F76994382068DD8D004B45B3 /* NSString+FWJ.h */,
 				F76994392068DD8D004B45B3 /* NSString+FWJ.m */,
+				F72E3A84206B2A7100B893E7 /* NSObject+FWJ.h */,
+				F72E3A85206B2A7100B893E7 /* NSObject+FWJ.m */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				F769941C206890AC004B45B3 /* ViewController.m in Sources */,
 				F7699427206890AC004B45B3 /* main.m in Sources */,
 				F769943A2068DD8D004B45B3 /* NSString+FWJ.m in Sources */,
+				F72E3A86206B2A7100B893E7 /* NSObject+FWJ.m in Sources */,
 				F76994342068933D004B45B3 /* UIView+FWJ.m in Sources */,
 				F7699431206892A7004B45B3 /* UIResponder+FWJ.m in Sources */,
 				F76994372068A73E004B45B3 /* UIImageView+FWJ.m in Sources */,
