@@ -6,10 +6,10 @@
 //  Copyright © 2018年 Lemon. All rights reserved.
 //
 
-#import "NSObject+FWJ.h"
+#import "NSObject+Serialize.h"
 #import <objc/runtime.h>
 
-@implementation NSObject (FWJSerialize)
+@implementation NSObject (Serialize)
 -(void)fwj_decode:(NSCoder *)decoder{
     Class cs = [self class];
     while (cs != [NSObject class]) {

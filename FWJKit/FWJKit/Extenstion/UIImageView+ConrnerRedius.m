@@ -6,9 +6,9 @@
 //  Copyright © 2018年 Lemon. All rights reserved.
 //
 
-#import "UIImageView+FWJ.h"
+#import "UIImageView+ConrnerRedius.h"
 
-@implementation UIImageView (FWJConrnerRedius)
+@implementation UIImageView (ConrnerRedius)
 
 -(void) fwj_cornerRadiusWithImage:(UIImage *) image cornerRadius:(CGFloat)cornerRadius{
     

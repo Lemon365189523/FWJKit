@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Lemon. All rights reserved.
 //
 
-#import "UIResponder+FWJ.h"
+#import "UIResponder+ResponderEvent.h"
 
 @implementation UIResponder (ResponderEvent)
 

@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F72E3A86206B2A7100B893E7 /* NSObject+FWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F72E3A85206B2A7100B893E7 /* NSObject+FWJ.m */; };
+		F72E3A86206B2A7100B893E7 /* NSObject+Serialize.m in Sources */ = {isa = PBXBuildFile; fileRef = F72E3A85206B2A7100B893E7 /* NSObject+Serialize.m */; };
 		F7699419206890AC004B45B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7699418206890AC004B45B3 /* AppDelegate.m */; };
 		F769941C206890AC004B45B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F769941B206890AC004B45B3 /* ViewController.m */; };
 		F7699421206890AC004B45B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7699420206890AC004B45B3 /* Assets.xcassets */; };
 		F7699427206890AC004B45B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7699426206890AC004B45B3 /* main.m */; };
-		F7699431206892A7004B45B3 /* UIResponder+FWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F7699430206892A7004B45B3 /* UIResponder+FWJ.m */; };
-		F76994342068933D004B45B3 /* UIView+FWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F76994332068933D004B45B3 /* UIView+FWJ.m */; };
-		F76994372068A73E004B45B3 /* UIImageView+FWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F76994362068A73E004B45B3 /* UIImageView+FWJ.m */; };
+		F7699431206892A7004B45B3 /* UIResponder+ResponderEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F7699430206892A7004B45B3 /* UIResponder+ResponderEvent.m */; };
+		F76994342068933D004B45B3 /* UIView+ViewEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F76994332068933D004B45B3 /* UIView+ViewEvent.m */; };
+		F76994372068A73E004B45B3 /* UIImageView+ConrnerRedius.m in Sources */ = {isa = PBXBuildFile; fileRef = F76994362068A73E004B45B3 /* UIImageView+ConrnerRedius.m */; };
 		F769943A2068DD8D004B45B3 /* NSString+FWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F76994392068DD8D004B45B3 /* NSString+FWJ.m */; };
+		F78749F4208D7AD10066A21D /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = F78749F3208D7AD10066A21D /* NSObject+Runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F72E3A84206B2A7100B893E7 /* NSObject+FWJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FWJ.h"; sourceTree = "<group>"; };
-		F72E3A85206B2A7100B893E7 /* NSObject+FWJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FWJ.m"; sourceTree = "<group>"; };
+		F72E3A84206B2A7100B893E7 /* NSObject+Serialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Serialize.h"; sourceTree = "<group>"; };
+		F72E3A85206B2A7100B893E7 /* NSObject+Serialize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Serialize.m"; sourceTree = "<group>"; };
 		F7699414206890AC004B45B3 /* FWJKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FWJKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7699417206890AC004B45B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7699418206890AC004B45B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,14 +30,16 @@
 		F7699420206890AC004B45B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7699425206890AC004B45B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7699426206890AC004B45B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F769942F206892A7004B45B3 /* UIResponder+FWJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FWJ.h"; sourceTree = "<group>"; };
-		F7699430206892A7004B45B3 /* UIResponder+FWJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FWJ.m"; sourceTree = "<group>"; };
-		F76994322068933D004B45B3 /* UIView+FWJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FWJ.h"; sourceTree = "<group>"; };
-		F76994332068933D004B45B3 /* UIView+FWJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FWJ.m"; sourceTree = "<group>"; };
-		F76994352068A73E004B45B3 /* UIImageView+FWJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FWJ.h"; sourceTree = "<group>"; };
-		F76994362068A73E004B45B3 /* UIImageView+FWJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FWJ.m"; sourceTree = "<group>"; };
+		F769942F206892A7004B45B3 /* UIResponder+ResponderEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+ResponderEvent.h"; sourceTree = "<group>"; };
+		F7699430206892A7004B45B3 /* UIResponder+ResponderEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+ResponderEvent.m"; sourceTree = "<group>"; };
+		F76994322068933D004B45B3 /* UIView+ViewEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewEvent.h"; sourceTree = "<group>"; };
+		F76994332068933D004B45B3 /* UIView+ViewEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewEvent.m"; sourceTree = "<group>"; };
+		F76994352068A73E004B45B3 /* UIImageView+ConrnerRedius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ConrnerRedius.h"; sourceTree = "<group>"; };
+		F76994362068A73E004B45B3 /* UIImageView+ConrnerRedius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ConrnerRedius.m"; sourceTree = "<group>"; };
 		F76994382068DD8D004B45B3 /* NSString+FWJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FWJ.h"; sourceTree = "<group>"; };
 		F76994392068DD8D004B45B3 /* NSString+FWJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FWJ.m"; sourceTree = "<group>"; };
+		F78749F2208D7AD10066A21D /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		F78749F3208D7AD10066A21D /* NSObject+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,16 +95,18 @@
 		F769942E20689243004B45B3 /* Extenstion */ = {
 			isa = PBXGroup;
 			children = (
-				F769942F206892A7004B45B3 /* UIResponder+FWJ.h */,
-				F7699430206892A7004B45B3 /* UIResponder+FWJ.m */,
-				F76994322068933D004B45B3 /* UIView+FWJ.h */,
-				F76994332068933D004B45B3 /* UIView+FWJ.m */,
-				F76994352068A73E004B45B3 /* UIImageView+FWJ.h */,
-				F76994362068A73E004B45B3 /* UIImageView+FWJ.m */,
+				F769942F206892A7004B45B3 /* UIResponder+ResponderEvent.h */,
+				F7699430206892A7004B45B3 /* UIResponder+ResponderEvent.m */,
+				F76994322068933D004B45B3 /* UIView+ViewEvent.h */,
+				F76994332068933D004B45B3 /* UIView+ViewEvent.m */,
+				F76994352068A73E004B45B3 /* UIImageView+ConrnerRedius.h */,
+				F76994362068A73E004B45B3 /* UIImageView+ConrnerRedius.m */,
 				F76994382068DD8D004B45B3 /* NSString+FWJ.h */,
 				F76994392068DD8D004B45B3 /* NSString+FWJ.m */,
-				F72E3A84206B2A7100B893E7 /* NSObject+FWJ.h */,
-				F72E3A85206B2A7100B893E7 /* NSObject+FWJ.m */,
+				F72E3A84206B2A7100B893E7 /* NSObject+Serialize.h */,
+				F72E3A85206B2A7100B893E7 /* NSObject+Serialize.m */,
+				F78749F2208D7AD10066A21D /* NSObject+Runtime.h */,
+				F78749F3208D7AD10066A21D /* NSObject+Runtime.m */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -177,11 +182,12 @@
 			files = (
 				F769941C206890AC004B45B3 /* ViewController.m in Sources */,
 				F7699427206890AC004B45B3 /* main.m in Sources */,
+				F78749F4208D7AD10066A21D /* NSObject+Runtime.m in Sources */,
 				F769943A2068DD8D004B45B3 /* NSString+FWJ.m in Sources */,
-				F72E3A86206B2A7100B893E7 /* NSObject+FWJ.m in Sources */,
-				F76994342068933D004B45B3 /* UIView+FWJ.m in Sources */,
-				F7699431206892A7004B45B3 /* UIResponder+FWJ.m in Sources */,
-				F76994372068A73E004B45B3 /* UIImageView+FWJ.m in Sources */,
+				F72E3A86206B2A7100B893E7 /* NSObject+Serialize.m in Sources */,
+				F76994342068933D004B45B3 /* UIView+ViewEvent.m in Sources */,
+				F7699431206892A7004B45B3 /* UIResponder+ResponderEvent.m in Sources */,
+				F76994372068A73E004B45B3 /* UIImageView+ConrnerRedius.m in Sources */,
 				F7699419206890AC004B45B3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

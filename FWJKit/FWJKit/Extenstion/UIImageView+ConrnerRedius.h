@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImageView (FWJConrnerRedius)
+@interface UIImageView (ConrnerRedius)
 
 
 /**

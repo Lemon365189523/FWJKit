@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (FWJSerialize)
+@interface NSObject (Serialize)
 
 ///解码
 -(void) fwj_decode:(NSCoder *)decoder;

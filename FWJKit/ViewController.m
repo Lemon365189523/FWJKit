@@ -7,14 +7,17 @@
 //
 
 #import "ViewController.h"
-#import "UIImageView+FWJ.h"
+#import "UIImageView+ConrnerRedius.h"
 #import "NSString+FWJ.h"
+#import "NSObject+Runtime.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    NSString *_testString;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +33,12 @@
     NSString *str = @"abc你我😉😉";
     NSLog(@"%ld",str.length);
     NSLog(@"%ld",[str fwj_includeEmojiLength]);
+    
+    
+    NSLog(@"%@",[self fwj_getClassName]);
+    NSLog(@"%@",[self fwj_getSuperClassName]);
+    NSLog(@"%d",[self fwj_isMetaClass]);
+    NSLog(@"%@",[self fwj_getIvarName:[self fwj_getIvarWithName:@"_view"]]);
 }
 
 

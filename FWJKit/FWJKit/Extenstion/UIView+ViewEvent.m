@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Lemon. All rights reserved.
 //
 
-#import "UIView+FWJ.h"
+#import "UIView+ViewEvent.h"
 #import <objc/runtime.h>
 
 @interface UIView()
@@ -17,32 +17,28 @@
 
 @implementation UIView (ViewEvent)
 
-static void fwj_addView(id array, id view){
+static inline void fwj_addView(id array, id view){
     if (view && [array isKindOfClass:[NSMutableArray class]]) {
         [(NSMutableArray *)array addObject:view];
     }
 }
 
+static inline void fwj_methodExchangeImplementations(Class cls, SEL old, SEL new){
+    Method oldMethod = class_getInstanceMethod(cls, old);
+    Method newMethod = class_getInstanceMethod(cls, new);
+    method_exchangeImplementations(oldMethod, newMethod);
+}
+
 +(void)load{
     Class cls = [self class];
     
-    Method addsubViewM = class_getInstanceMethod(cls, @selector(addSubview:));
-    Method fwj_addsubViewM = class_getInstanceMethod(cls, @selector(fwj_addSubview:));
+    fwj_methodExchangeImplementations(cls, @selector(addSubview:), @selector(fwj_addSubview:));
     
-    method_exchangeImplementations(addsubViewM, fwj_addsubViewM);
+    fwj_methodExchangeImplementations(cls,  @selector(insertSubview:atIndex:), @selector(fwj_insertSubview:atIndex:));
     
+    fwj_methodExchangeImplementations(cls, @selector(insertSubview:aboveSubview:), @selector(fwj_insertSubview:aboveSubview:));
     
-    Method insertViewM1 = class_getInstanceMethod(cls, @selector(insertSubview:atIndex:));
-    Method fwj_insertViewM1 = class_getInstanceMethod(cls, @selector(fwj_insertSubview:atIndex:));
-    method_exchangeImplementations(insertViewM1, fwj_insertViewM1);
-    
-    Method insertSubViewM1 = class_getInstanceMethod(cls, @selector(insertSubview:aboveSubview:));
-    Method fwj_insertSubViewM1 = class_getInstanceMethod(cls, @selector(fwj_insertSubview:aboveSubview:));
-    method_exchangeImplementations(insertSubViewM1, fwj_insertSubViewM1);
-    
-    Method insertSubViewM2 = class_getInstanceMethod(cls, @selector(insertSubview:belowSubview:));
-    Method fwj_insertSubViewM2 = class_getInstanceMethod(cls, @selector(fwj_insertSubview:belowSubview:));
-    method_exchangeImplementations(insertSubViewM2, fwj_insertSubViewM2);
+    fwj_methodExchangeImplementations(cls, @selector(insertSubview:belowSubview:), @selector(fwj_insertSubview:belowSubview:));
 }
 
 -(void)fwj_viewEventWithName:(NSString *)eventName userInfo:(NSDictionary *)dic{

@@ -14,6 +14,9 @@
 {
    
     NSInteger emojiLength = [self fwj_emojiLength];
+    //将一个NSString类型字符串获取的长度转换成类似ASCII编码的长度，如汉字2个字节，英文以及符号1个字节这个功能。
+    //使用[NSString length]方法调用获取的长度是一个中文和一个英文都是一个字节
+    //当前只是判断字符串的长度  不需要装换成ASCII编码长度
     NSInteger length = self.length;
     if (emojiLength > 0) {
         length = length - emojiLength;
