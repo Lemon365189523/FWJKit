@@ -17,6 +17,8 @@
 		F76994372068A73E004B45B3 /* UIImageView+ConrnerRedius.m in Sources */ = {isa = PBXBuildFile; fileRef = F76994362068A73E004B45B3 /* UIImageView+ConrnerRedius.m */; };
 		F769943A2068DD8D004B45B3 /* NSString+FWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F76994392068DD8D004B45B3 /* NSString+FWJ.m */; };
 		F78749F4208D7AD10066A21D /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = F78749F3208D7AD10066A21D /* NSObject+Runtime.m */; };
+		F78749F8208DBDF10066A21D /* FWJCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = F78749F7208DBDF10066A21D /* FWJCarouselView.m */; };
+		F78749FB208DC97A0066A21D /* NSTimer+FWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F78749FA208DC97A0066A21D /* NSTimer+FWJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,11 @@
 		F76994392068DD8D004B45B3 /* NSString+FWJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FWJ.m"; sourceTree = "<group>"; };
 		F78749F2208D7AD10066A21D /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
 		F78749F3208D7AD10066A21D /* NSObject+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		F78749F6208DBDF10066A21D /* FWJCarouselView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWJCarouselView.h; sourceTree = "<group>"; };
+		F78749F7208DBDF10066A21D /* FWJCarouselView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWJCarouselView.m; sourceTree = "<group>"; };
+		F78749F9208DC97A0066A21D /* NSTimer+FWJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FWJ.h"; sourceTree = "<group>"; };
+		F78749FA208DC97A0066A21D /* NSTimer+FWJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FWJ.m"; sourceTree = "<group>"; };
+		F78749FC208DCCEB0066A21D /* FWJMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWJMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +94,9 @@
 		F769942D20689243004B45B3 /* FWJKit */ = {
 			isa = PBXGroup;
 			children = (
+				F78749F5208DBAE80066A21D /* UI */,
 				F769942E20689243004B45B3 /* Extenstion */,
+				F78749FC208DCCEB0066A21D /* FWJMacro.h */,
 			);
 			path = FWJKit;
 			sourceTree = "<group>";
@@ -107,8 +116,19 @@
 				F72E3A85206B2A7100B893E7 /* NSObject+Serialize.m */,
 				F78749F2208D7AD10066A21D /* NSObject+Runtime.h */,
 				F78749F3208D7AD10066A21D /* NSObject+Runtime.m */,
+				F78749F9208DC97A0066A21D /* NSTimer+FWJ.h */,
+				F78749FA208DC97A0066A21D /* NSTimer+FWJ.m */,
 			);
 			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		F78749F5208DBAE80066A21D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F78749F6208DBDF10066A21D /* FWJCarouselView.h */,
+				F78749F7208DBDF10066A21D /* FWJCarouselView.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +204,12 @@
 				F7699427206890AC004B45B3 /* main.m in Sources */,
 				F78749F4208D7AD10066A21D /* NSObject+Runtime.m in Sources */,
 				F769943A2068DD8D004B45B3 /* NSString+FWJ.m in Sources */,
+				F78749F8208DBDF10066A21D /* FWJCarouselView.m in Sources */,
 				F72E3A86206B2A7100B893E7 /* NSObject+Serialize.m in Sources */,
 				F76994342068933D004B45B3 /* UIView+ViewEvent.m in Sources */,
 				F7699431206892A7004B45B3 /* UIResponder+ResponderEvent.m in Sources */,
 				F76994372068A73E004B45B3 /* UIImageView+ConrnerRedius.m in Sources */,
+				F78749FB208DC97A0066A21D /* NSTimer+FWJ.m in Sources */,
 				F7699419206890AC004B45B3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
